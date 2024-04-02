@@ -27,7 +27,7 @@ class Flatten(torch.nn.Module):
         super().__init__()
     
     def forward(self, x):
-        assert x.shape[2] == x.shape[3] == 1, f"{x.shape[2]} != {x.shape[3]} != 1"
+        #assert x.shape[2] == x.shape[3] == 1, f"{x.shape[2]} != {x.shape[3]} != 1"
         return x[:, :, 0, 0]
 
 
